@@ -11,7 +11,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SearchService {
 
-    private FlightService flightService;
+    private final FlightService flightService;
 
     public List<FlightResponse> searchOneWayFlight(FlightRequest flightRequest) {
         return flightService.searchOneWayFlights(flightRequest);
